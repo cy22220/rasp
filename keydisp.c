@@ -92,6 +92,7 @@ int main()
 		}
 		if (status == 1 && status1 == 0)
 		{
+			location(i2c_fd, 0);
 			int val = lcd_datawrite(i2c_fd, "hello");
 			if (val < 0)
 			{
